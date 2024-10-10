@@ -1,0 +1,74 @@
+.app-window {
+    width: 300px;
+    height: 200px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app-window.dark {
+    background-color: #1c1c1c !important;
+    color: white;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 12px 12px 0 0;
+    cursor: move;
+}
+
+/* Dark Mode for Clock App Header */
+.app-window.dark .app-header {
+    background-color: #444 !important;
+}
+
+.window-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.window-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+/* Close Button */
+.window-button.close {
+    background-color: #ff5f57;
+}
+
+.window-button:hover {
+    opacity: 0.8;
+}
+
+.app-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: inherit;
+    color: black;
+    border-radius: 0 0 12px 12px;
+}
+
+/* Dark Mode for Clock App Body */
+.app-window.dark .app-body {
+    color: white;
+}

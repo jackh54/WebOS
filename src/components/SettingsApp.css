@@ -1,0 +1,165 @@
+.settings-window {
+    width: 600px;
+    height: 400px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    display: flex;
+    flex-direction: column;
+    color: black;
+  }
+  
+  /* Dark Mode for Settings App */
+  .settings-window.dark {
+    background-color: #1c1c1c !important;
+    color: white !important;
+  }
+  
+  .app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 8px 8px 0 0;
+    cursor: move;
+  }
+  
+  /* Dark Mode for Header */
+  .settings-window.dark .app-header {
+    background-color: #444;
+    color: white;
+  }
+  
+  .settings-body {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  /* Dark Mode for Sidebar */
+  .settings-window.dark .settings-sidebar {
+    background-color: #333;
+    color: white;
+  }
+  
+  .settings-sidebar {
+    width: 150px;
+    background-color: #efefef;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  /* Dark Mode for Sidebar Items */
+  .settings-window.dark .settings-sidebar li {
+    background-color: #444;
+    color: white;
+  }
+  
+  .settings-window.dark .settings-sidebar li.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .settings-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .settings-sidebar li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .settings-content {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    color: black;
+  }
+  
+  /* Dark Mode for Content */
+  .settings-window.dark .settings-content {
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  .settings-option {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .switch input {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #007bff;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }

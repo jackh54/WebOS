@@ -1,0 +1,45 @@
+.browser-app {
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  resize: both;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+}
+
+.app-header {
+  display: flex;
+  background-color: #555;
+  padding: 5px;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+}
+
+.window-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.window-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: red;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.tab-content {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.browser-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
