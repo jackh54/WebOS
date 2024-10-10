@@ -32,17 +32,17 @@
 
 /* Clock Icon */
 .taskbar-icon.clock {
-  background-image: url('/Users/jackharris/webos/src/assets/clock.jpg');
+  background-image: url('/src/assets/clock.jpg');
 }
 
 /* Settings Icon */
 .taskbar-icon.settings {
-  background-image: url('/Users/jackharris/webos/src/assets/settings.png');
+  background-image: url('/src/assets/settings.png');
 }
 
 /* Browser Icon */
 .taskbar-icon.browser {
-  background-image: url('/Users/jackharris/webos/src/assets/browser.png')
+  background-image: url('/src/assets/browser.png')
 }
 
 .taskbar-icon.active {
